@@ -1,0 +1,83 @@
+# ===== PYTHON =====
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+
+# virtual environments
+.venv/
+env/
+venv/
+ENV/
+*.env
+*.env.*
+
+# pip installer
+pip-wheel-metadata/
+
+# compiled bytecode
+*.egg-info/
+*.egg
+*.pyo
+*.pyd
+
+# build artifacts
+build/
+dist/
+
+# pytest cache
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# ===== ML / DL =====
+# model outputs
+models/
+checkpoints/
+artifacts/
+runs/
+experiments/
+wandb/
+mlruns/
+
+# training logs
+logs/
+tensorboard/
+tb_logs/
+
+# big data
+data/
+datasets/
+*.csv
+*.parquet
+*.zip
+*.hdf5
+*.pkl
+
+# ===== IDE =====
+# VS Code
+.vscode/
+
+# JetBrains IDE (PyCharm)
+.idea/
+
+# ===== SYSTEM FILES =====
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ===== Docker =====
+docker/
+*.pid
+
+# ===== ENV-RELATED CONFIGS =====
+.env
+.envrc
+*.secret
+*.key
+*.pem
