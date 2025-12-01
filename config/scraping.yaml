@@ -1,0 +1,30 @@
+# Base configuration for Google Play Store scraping - Task 1
+
+base_processing:
+  # Scraping parameters
+  scraping:
+    reviews_per_bank: 400
+    max_retries: 3
+    lang: en
+    country: et
+
+  # File paths for storing scraped data
+  paths:
+    raw: data/raw
+    processed: data/processed
+    raw_reviews: data/raw/reviews_raw.csv
+    processed_reviews: data/processed/reviews_processed.csv
+    sentiment_results: data/processed/reviews_with_sentiment.csv
+    final_results: data/processed/reviews_final.csv
+
+  # App information placeholders (values replaced from .env)
+  apps:
+    CBE:
+      name: Commercial Bank of Ethiopia
+      app_id: ${CBE_APP_ID}
+    BOA:
+      name: Bank of Abyssinia
+      app_id: ${BOA_APP_ID}
+    Dashen:
+      name: Dashen Bank
+      app_id: ${DASHEN_APP_ID}
